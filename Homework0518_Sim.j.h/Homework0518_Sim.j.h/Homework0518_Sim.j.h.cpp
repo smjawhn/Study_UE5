@@ -7,12 +7,20 @@ int StringCount(char* _Arr)
 {
     int count = 0;
 
-    while (*_Arr != 0)
+
+    if (0 != _Arr)
     {
-        count+=
+        while (0 != _Arr[count])
+        {
+            ++count;
+        }
     }
+
+    else if (0 == _Arr);
+
     printf("%d\n", count);
-    return 0;
+
+    return count;
 }
 
 void ChangeCh(char* _Arr, char _PrevCh, char _NextCh)
@@ -21,30 +29,46 @@ void ChangeCh(char* _Arr, char _PrevCh, char _NextCh)
     //  1-1. 함수 내부에서 하지 말고
     // for while도 생각하지 말고
 
+    int count2 = 0;
+
+
+
+    if (0 != _Arr)
+    {
+        while (0 != _Arr[count2])
+        {
+
+            if (_PrevCh == _Arr[count2])
+            {
+                _Arr[count2] = _NextCh;
+            }
+            ++count2;
+        }
+    }
+
+    else if (0 == _Arr);
 
     return;
 }
 
 int main()
 {
-        {
-        char Arr[100] = "aa";
-                // 글자수를 세는 함수입니다.
-        int Result = StringCount(nullptr);
+    {
+        char Arr[100] = "asdfgdfsga";
+        // 글자수를 세는 함수입니다.
+        int Result = StringCount(Arr);
 
         int a = 0;
     }
+
 
     {
-        char Arr[100] = "aaa bbb ccc";
+        char Arr[100] = "aaa bbb ccc dddd eeee";
 
-        Arr[0] = '1';
+        //Arr[0] = '1';
 
-        // Arr[100] = "1111111111111";
+        ChangeCh(Arr, 'd', 'z');
 
-        // 3이 나와야 합니다.
-        // "aaa bbb ccc"; => "aaa bbb ddd";
-        ChangeCh(Arr, 'c', 'd');
-
-        int a = 0;
+        printf("%s\n", Arr);
     }
+}
