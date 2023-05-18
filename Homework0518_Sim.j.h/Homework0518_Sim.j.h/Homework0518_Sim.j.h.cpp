@@ -23,6 +23,7 @@ int StringCount(char* _Arr)
     return count;
 }
 
+
 void ChangeCh(char* _Arr, char _PrevCh, char _NextCh)
 {
     // 1. 들어온 글자를 전부 '1'로 채워봐라.
