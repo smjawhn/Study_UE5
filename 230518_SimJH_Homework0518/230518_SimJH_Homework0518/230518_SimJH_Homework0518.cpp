@@ -1,4 +1,4 @@
-﻿// Homework0518_Sim.j.h.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
+﻿// 230518_SimJH_Homework0518.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 
 #include <iostream>
@@ -15,7 +15,7 @@ int StringCount(char* _Arr)
             ++count;
         }
     }
-
+    
     else if (0 == _Arr);
 
     printf("%d\n", count);
@@ -73,3 +73,4 @@ int main()
         printf("%s\n", Arr);
     }
 }
+    
